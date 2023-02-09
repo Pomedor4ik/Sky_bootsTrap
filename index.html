@@ -1,0 +1,649 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@800&family=Roboto:wght@900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@800&family=Montserrat&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&family=League+Spartan:wght@800&family=Montserrat&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&family=League+Spartan:wght@800&family=Montserrat&family=Poppins:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&family=Inter&family=League+Spartan:wght@800&family=Montserrat&family=Poppins:wght@500&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./reset.css">
+    <link rel="stylesheet" href="./style.css">
+    <title>Sky_bootsTrap</title>
+</head>
+<body>
+    <button type="button" class="btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#exampleModal">
+        Launch demo modal
+    </button>
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalLabel">File uploading</h1>
+              <button type="button" class="btn btn-secondary">
+                <svg class="upl"><use xlink:href="./sprite.svg#upl"></use></svg>
+                <p>Upload File</p>
+              </button>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <table class="table">
+                    <thead>
+                      <tr>
+                        <th scope="col"><svg class="jpg"><use xlink:href="./sprite.svg#jpg"></use></svg></th>
+                        <th scope="col">Lorem-ipsum_sitamet.jpg</th>
+                        <th scope="col">Complete</th>
+                        <th scope="col">12.44 Mb</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row"><svg class="jpg"><use xlink:href="./sprite.svg#jpg"></use></svg></th>
+                        <td>Lorem-ipsum_sitamet.jpg</td>
+                        <td>Uplad Failed</td>
+                        <td>12.44 Mb</td>
+                      </tr>
+                      <tr>
+                        <th scope="row"><svg class="jpg"><use xlink:href="./sprite.svg#jpg"></use></svg></th>
+                        <td>Lorem-ipsum_sitamet.jpg</td>
+                        <td>Complete</td>
+                        <td>12.44 Mb</td>
+                      </tr>
+                      <tr>
+                        <th scope="row"><input type="checkbox"></th>
+                        <th>I agree to the Terms of Use</th>
+                      </tr>
+                      <tr>
+                        <th>
+                            <button type="button" class="btn btn-danger">
+                                <svg class="upl"><use xlink:href="./sprite.svg#upl"></use></svg>
+                                <p>Upload File</p>
+                            </button>
+                        </th>
+                      </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    <div class="BGALL">
+        <img src="./bg-all.png" alt="">
+    </div>
+    <header>
+        <div class="logo">
+            <p class="logo_p1">skybox</p>
+            <p class="logo_p2">Home</p>
+            <p class="logo_p2">Pericing</p>
+            <p class="logo_p2">Contact</p>
+            <p class="logo_p3">Login</p>
+            <button><p>sign up</p></button>
+        </div>  
+    </header>
+    <div class="files1">
+        <p class="files1_top1">my files</p>
+        <p class="files1_top2">online storage</p>
+    </div>
+    <main>
+        <div class="files">
+            <div class="files_panel">
+                <div class="files_panel_upper">
+                    <div class="files_panel_upper_storage">
+                        <p>File stored total: 0B / 10GB</p>
+                        <p>Files will be stored 30 days</p>
+                    </div>
+                    <div class="files_panel_upper_result">
+                        <p class="files_panel_upper_result_info">Displaying 1-10 of 10 results.</p>
+                        <p class="files_panel_upper_result_size">Page size:</p>
+                    </div>
+                    <div class="files_panel_upper_inputSize">
+                        <input type="text" value="10">
+                        <svg class="up-down"><use xlink:href="./sprite.svg#up-down"></use></svg>
+                    </div>
+                    <button class="files_panel_upper_folderBtn">
+                        <svg class="plus"><use xlink:href="./sprite.svg#plus"></use></svg>
+                        <p>Add Folder</p>
+                    </button>
+                    <button class="files_panel_upper_uploadBtn">
+                        <svg class="upl"><use xlink:href="./sprite.svg#upl"></use></svg>
+                        <p>Upload File</p>
+                    </button>
+                </div>
+                <div class="files_panel_down">
+                    <div class="files_panel_down_search">
+                        <svg class="files_panel_down_search_inptSvg"><use xlink:href="./sprite.svg#search"></use></svg>
+                        <input class="files_panel_down_search_inptP" type="search" placeholder="Search type file name and pres Enter">
+                    </div>
+                    <div class="files_panel_down_btnContainer">
+                        <input class="files_panel_down_btnContainer_btn1"></input>
+                        <input class="files_panel_down_btnContainer_btn2"></input>
+                        <input class="files_panel_down_btnContainer_btn3"></input>
+                        <input class="files_panel_down_btnContainer_btn4"></input>
+                        <input class="files_panel_down_btnContainer_btn4"></input>
+                        <button class="files_panel_down_btnContainer_btn5">Search</button>
+                    </div>  
+                </div>
+            </div>
+            <table class="files_table"> 
+                <tr class="files_table_greyRow">
+                    <td class="td_Checkbox">
+                        <input type="checkbox" name="" id="">
+                    </td>
+                    <td class="td td_type">
+                        <p>TYPE</p>
+                        <svg class="up-down"><use xlink:href="./sprite.svg#up-down"></use></svg>
+                    </td>
+                    <td class="td td_name">
+                        <p>NAME</p>
+                        <svg class="up-down"><use xlink:href="./sprite.svg#up-down"></use></svg>
+                    </td>
+                    <td class="td td_fileCount">
+                        <p>FILE COUNT</p>
+                    </td>
+                    <td class="td td_dateCreated">
+                        <p>DATE CREATED</p>
+                    </td>
+                    <td class="td td_DL">
+                        <p>DL</p>
+                    </td>
+                    <td class="td td_SIZE">
+                        <p>SIZE</p>
+                    </td>
+                    <td class="td td_ACCESS">
+                        <p>ACCESS</p>
+                        <svg class="up-down"><use xlink:href="./sprite.svg#up-down"></use></svg>
+                    </td>
+                    <td class="td td_coma">
+                        <svg><use xlink:href="./sprite.svg#3"></use></svg>
+                    </td>
+                </tr>
+            </table>
+            <table class="files_table1">
+                <tr class="files_table1_greyRow">
+                    <td class="td_Checkbox">
+                        <input type="checkbox" name="" id="">
+                    </td>
+                    <td class="td td_type">
+                        <svg class="jpg"><use xlink:href="./sprite.svg#jpg"></use></svg>
+                    </td>
+                    <td class="td td_name">
+                        <p>Lorem-ipsum_sitamet.jpg</p>
+                    </td>
+                    <td class="td td_fileCOUnT">
+                    </td>
+                    <td class="td td_date">
+                        <p>2021.09.30</p>
+                    </td>
+                    <td class="td td_O">
+                        <p>0</p>
+                    </td>
+                    <td class="td td_MB">
+                        <p>12.44 Mb</p>
+                    </td>
+                    <td class="td td_btnPublic">
+                        <button>
+                            public
+                        </button>
+                    </td>
+                    <td class="td td_endSvg">
+                        <svg class="eye"><use xlink:href="./sprite.svg#eye"></use></svg>
+                        <svg class="trush"><use xlink:href="./sprite.svg#trush"></use></svg>
+                        <svg class="pen"><use xlink:href="./sprite.svg#pen"></use></svg>
+                    </td>
+                </tr>
+            </table>
+            <table class="files_table">
+                <tr class="files_table_greyRow">
+                    <td class="td_Checkbox">
+                        <input type="checkbox" name="" id="">
+                    </td>
+                    <td class="td td_type">
+                        <svg class="jpg"><use xlink:href="./sprite.svg#jpg"></use></svg>
+                    </td>
+                    <td class="td td_name">
+                        <p>Lorem-ipsum_sitamet.jpg</p>
+                    </td>
+                    <td class="td td_fileCOUnT">
+                    </td>
+                    <td class="td td_date">
+                        <p>2021.09.30</p>
+                    </td>
+                    <td class="td td_O">
+                        <p>0</p>
+                    </td>
+                    <td class="td td_MB">
+                        <p>12.44 Mb</p>
+                    </td>
+                    <td class="td td_btnPublic">
+                        <button>
+                            public
+                        </button>
+                    </td>
+                    <td class="td td_endSvg">
+                        <svg class="eye"><use xlink:href="./sprite.svg#eye"></use></svg>
+                        <svg class="trush"><use xlink:href="./sprite.svg#trush"></use></svg>
+                        <svg class="pen"><use xlink:href="./sprite.svg#pen"></use></svg>
+                    </td>
+                </tr>
+            </table>
+            <table class="files_table1">
+                <tr class="files_table1_greyRow">
+                    <td class="td_Checkbox">
+                        <input type="checkbox" name="" id="">
+                    </td>
+                    <td class="td td_type">
+                        <svg class="jpg"><use xlink:href="./sprite.svg#jpg"></use></svg>
+                    </td>
+                    <td class="td td_name">
+                        <p>Lorem-ipsum_sitamet.jpg</p>
+                    </td>
+                    <td class="td td_fileCOUnT">
+                    </td>
+                    <td class="td td_date">
+                        <p>2021.09.30</p>
+                    </td>
+                    <td class="td td_O">
+                        <p>0</p>
+                    </td>
+                    <td class="td td_MB">
+                        <p>12.44 Mb</p>
+                    </td>
+                    <td class="td td_btnPublic">
+                        <button>
+                            public
+                        </button>
+                    </td>
+                    <td class="td td_endSvg">
+                        <svg class="eye"><use xlink:href="./sprite.svg#eye"></use></svg>
+                        <svg class="trush"><use xlink:href="./sprite.svg#trush"></use></svg>
+                        <svg class="pen"><use xlink:href="./sprite.svg#pen"></use></svg>
+                    </td>
+                </tr>
+            </table>
+            <table class="files_table">
+                <tr class="files_table_greyRow">
+                    <td class="td_Checkbox">
+                        <input type="checkbox" name="" id="">
+                    </td>
+                    <td class="td td_type">
+                        <svg class="jpg"><use xlink:href="./sprite.svg#jpg"></use></svg>
+                    </td>
+                    <td class="td td_name">
+                        <p>Lorem-ipsum_sitamet.jpg</p>
+                    </td>
+                    <td class="td td_fileCOUnT">
+                    </td>
+                    <td class="td td_date">
+                        <p>2021.09.30</p>
+                    </td>
+                    <td class="td td_O">
+                        <p>0</p>
+                    </td>
+                    <td class="td td_MB">
+                        <p>12.44 Mb</p>
+                    </td>
+                    <td class="td td_btnPublic">
+                        <button>
+                            public
+                        </button>
+                    </td>
+                    <td class="td td_endSvg">
+                        <svg class="eye"><use xlink:href="./sprite.svg#eye"></use></svg>
+                        <svg class="trush"><use xlink:href="./sprite.svg#trush"></use></svg>
+                        <svg class="pen"><use xlink:href="./sprite.svg#pen"></use></svg>
+                    </td>
+                </tr>
+            </table>
+            <table class="files_table1">
+                <tr class="files_table1_greyRow">
+                    <td class="td_Checkbox">
+                        <input type="checkbox" name="" id="">
+                    </td>
+                    <td class="td td_type">
+                        <svg class="jpg"><use xlink:href="./sprite.svg#jpg"></use></svg>
+                    </td>
+                    <td class="td td_name">
+                        <p>Lorem-ipsum_sitamet.jpg</p>
+                    </td>
+                    <td class="td td_fileCOUnT">
+                    </td>
+                    <td class="td td_date">
+                        <p>2021.09.30</p>
+                    </td>
+                    <td class="td td_O">
+                        <p>0</p>
+                    </td>
+                    <td class="td td_MB">
+                        <p>12.44 Mb</p>
+                    </td>
+                    <td class="td td_btnPublic">
+                        <button>
+                            public
+                        </button>
+                    </td>
+                    <td class="td td_endSvg">
+                        <svg class="eye"><use xlink:href="./sprite.svg#eye"></use></svg>
+                        <svg class="trush"><use xlink:href="./sprite.svg#trush"></use></svg>
+                        <svg class="pen"><use xlink:href="./sprite.svg#pen"></use></svg>
+                    </td>
+                </tr>
+            </table>
+            <table class="files_table">
+                <tr class="files_table_greyRow">
+                    <td class="td_Checkbox">
+                        <input type="checkbox" name="" id="">
+                    </td>
+                    <td class="td td_type">
+                        <svg class="jpg"><use xlink:href="./sprite.svg#jpg"></use></svg>
+                    </td>
+                    <td class="td td_name">
+                        <p>Lorem-ipsum_sitamet.jpg</p>
+                    </td>
+                    <td class="td td_fileCOUnT">
+                    </td>
+                    <td class="td td_date">
+                        <p>2021.09.30</p>
+                    </td>
+                    <td class="td td_O">
+                        <p>0</p>
+                    </td>
+                    <td class="td td_MB">
+                        <p>12.44 Mb</p>
+                    </td>
+                    <td class="td td_btnPublic">
+                        <button>
+                            public
+                        </button>
+                    </td>
+                    <td class="td td_endSvg">
+                        <svg class="eye"><use xlink:href="./sprite.svg#eye"></use></svg>
+                        <svg class="trush"><use xlink:href="./sprite.svg#trush"></use></svg>
+                        <svg class="pen"><use xlink:href="./sprite.svg#pen"></use></svg>
+                    </td>
+                </tr>
+            </table>
+            <table class="files_table1">
+                <tr class="files_table1_greyRow">
+                    <td class="td_Checkbox">
+                        <input type="checkbox" name="" id="">
+                    </td>
+                    <td class="td td_type">
+                        <svg class="jpg"><use xlink:href="./sprite.svg#jpg"></use></svg>
+                    </td>
+                    <td class="td td_name">
+                        <p>Lorem-ipsum_sitamet.jpg</p>
+                    </td>
+                    <td class="td td_fileCOUnT">
+                    </td>
+                    <td class="td td_date">
+                        <p>2021.09.30</p>
+                    </td>
+                    <td class="td td_O">
+                        <p>0</p>
+                    </td>
+                    <td class="td td_MB">
+                        <p>12.44 Mb</p>
+                    </td>
+                    <td class="td td_btnPublic">
+                        <button>
+                            public
+                        </button>
+                    </td>
+                    <td class="td td_endSvg">
+                        <svg class="eye"><use xlink:href="./sprite.svg#eye"></use></svg>
+                        <svg class="trush"><use xlink:href="./sprite.svg#trush"></use></svg>
+                        <svg class="pen"><use xlink:href="./sprite.svg#pen"></use></svg>
+                    </td>
+                </tr>
+            </table>
+            <table class="files_table">
+                <tr class="files_table_greyRow">
+                    <td class="td_Checkbox">
+                        <input type="checkbox" name="" id="">
+                    </td>
+                    <td class="td td_type">
+                        <svg class="jpg"><use xlink:href="./sprite.svg#jpg"></use></svg>
+                    </td>
+                    <td class="td td_name">
+                        <p>Lorem-ipsum_sitamet.jpg</p>
+                    </td>
+                    <td class="td td_fileCOUnT">
+                    </td>
+                    <td class="td td_date">
+                        <p>2021.09.30</p>
+                    </td>
+                    <td class="td td_O">
+                        <p>0</p>
+                    </td>
+                    <td class="td td_MB">
+                        <p>12.44 Mb</p>
+                    </td>
+                    <td class="td td_btnPublic">
+                        <button>
+                            public
+                        </button>
+                    </td>
+                    <td class="td td_endSvg">
+                        <svg class="eye"><use xlink:href="./sprite.svg#eye"></use></svg>
+                        <svg class="trush"><use xlink:href="./sprite.svg#trush"></use></svg>
+                        <svg class="pen"><use xlink:href="./sprite.svg#pen"></use></svg>
+                    </td>
+                </tr>
+            </table>
+            <table class="files_table1">
+                <tr class="files_table1_greyRow">
+                    <td class="td_Checkbox">
+                        <input type="checkbox" name="" id="">
+                    </td>
+                    <td class="td td_type">
+                        <svg class="jpg"><use xlink:href="./sprite.svg#jpg"></use></svg>
+                    </td>
+                    <td class="td td_name">
+                        <p>Lorem-ipsum_sitamet.jpg</p>
+                    </td>
+                    <td class="td td_fileCOUnT">
+                    </td>
+                    <td class="td td_date">
+                        <p>2021.09.30</p>
+                    </td>
+                    <td class="td td_O">
+                        <p>0</p>
+                    </td>
+                    <td class="td td_MB">
+                        <p>12.44 Mb</p>
+                    </td>
+                    <td class="td td_btnPublic">
+                        <button>
+                            public
+                        </button>
+                    </td>
+                    <td class="td td_endSvg">
+                        <svg class="eye"><use xlink:href="./sprite.svg#eye"></use></svg>
+                        <svg class="trush"><use xlink:href="./sprite.svg#trush"></use></svg>
+                        <svg class="pen"><use xlink:href="./sprite.svg#pen"></use></svg>
+                    </td>
+                </tr>
+            </table>
+            <table class="files_table">
+                <tr class="files_table_greyRow">
+                    <td class="td_Checkbox">
+                        <input type="checkbox" name="" id="">
+                    </td>
+                    <td class="td td_type">
+                        <svg class="jpg"><use xlink:href="./sprite.svg#jpg"></use></svg>
+                    </td>
+                    <td class="td td_name">
+                        <p>Lorem-ipsum_sitamet.jpg</p>
+                    </td>
+                    <td class="td td_fileCOUnT">
+                    </td>
+                    <td class="td td_date">
+                        <p>2021.09.30</p>
+                    </td>
+                    <td class="td td_O">
+                        <p>0</p>
+                    </td>
+                    <td class="td td_MB">
+                        <p>12.44 Mb</p>
+                    </td>
+                    <td class="td td_btnPublic">
+                        <button>
+                            public
+                        </button>
+                    </td>
+                    <td class="td td_endSvg">
+                        <svg class="eye"><use xlink:href="./sprite.svg#eye"></use></svg>
+                        <svg class="trush"><use xlink:href="./sprite.svg#trush"></use></svg>
+                        <svg class="pen"><use xlink:href="./sprite.svg#pen"></use></svg>
+                    </td>
+                </tr>
+            </table>
+            <table class="files_table1">
+                <tr class="files_table1_greyRow">
+                    <td class="td_Checkbox">
+                        <input type="checkbox" name="" id="">
+                    </td>
+                    <td class="td td_type">
+                        <svg class="jpg"><use xlink:href="./sprite.svg#jpg"></use></svg>
+                    </td>
+                    <td class="td td_name">
+                        <p>Lorem-ipsum_sitamet.jpg</p>
+                    </td>
+                    <td class="td td_fileCOUnT">
+                    </td>
+                    <td class="td td_date">
+                        <p>2021.09.30</p>
+                    </td>
+                    <td class="td td_O">
+                        <p>0</p>
+                    </td>
+                    <td class="td td_MB">
+                        <p>12.44 Mb</p>
+                    </td>
+                    <td class="td td_btnPublic">
+                        <button>
+                            public
+                        </button>
+                    </td>
+                    <td class="td td_endSvg">
+                        <svg class="eye"><use xlink:href="./sprite.svg#eye"></use></svg>
+                        <svg class="trush"><use xlink:href="./sprite.svg#trush"></use></svg>
+                        <svg class="pen"><use xlink:href="./sprite.svg#pen"></use></svg>
+                    </td>
+                </tr>
+            </table>
+            <table class="files_table">
+                <tr class="files_table_greyRow">
+                    <td class="td_Checkbox">
+                        <input type="checkbox" name="" id="">
+                    </td>
+                    <td class="td td_type">
+                        <svg class="jpg"><use xlink:href="./sprite.svg#jpg"></use></svg>
+                    </td>
+                    <td class="td td_name">
+                        <p>Lorem-ipsum_sitamet.jpg</p>
+                    </td>
+                    <td class="td td_fileCOUnT">
+                    </td>
+                    <td class="td td_date">
+                        <p>2021.09.30</p>
+                    </td>
+                    <td class="td td_O">
+                        <p>0</p>
+                    </td>
+                    <td class="td td_MB">
+                        <p>12.44 Mb</p>
+                    </td>
+                    <td class="td td_btnPublic">
+                        <button>
+                            public
+                        </button>
+                    </td>
+                    <td class="td td_endSvg">
+                        <svg class="eye"><use xlink:href="./sprite.svg#eye"></use></svg>
+                        <svg class="trush"><use xlink:href="./sprite.svg#trush"></use></svg>
+                        <svg class="pen"><use xlink:href="./sprite.svg#pen"></use></svg>
+                    </td>
+                </tr>
+            </table>
+            <table class="files_table1">
+                <tr class="files_table1_greyRow">
+                    <td class="td_Checkbox">
+                        <input type="checkbox" name="" id="">
+                    </td>
+                    <td class="td td_type">
+                        <svg class="jpg"><use xlink:href="./sprite.svg#jpg"></use></svg>
+                    </td>
+                    <td class="td td_name">
+                        <p>Lorem-ipsum_sitamet.jpg</p>
+                    </td>
+                    <td class="td td_fileCOUnT">
+                    </td>
+                    <td class="td td_date">
+                        <p>2021.09.30</p>
+                    </td>
+                    <td class="td td_O">
+                        <p>0</p>
+                    </td>
+                    <td class="td td_MB">
+                        <p>12.44 Mb</p>
+                    </td>
+                    <td class="td td_btnPublic">
+                        <button>
+                            public
+                        </button>
+                    </td>
+                    <td class="td td_endSvg">
+                        <svg class="eye"><use xlink:href="./sprite.svg#eye"></use></svg>
+                        <svg class="trush"><use xlink:href="./sprite.svg#trush"></use></svg>
+                        <svg class="pen"><use xlink:href="./sprite.svg#pen"></use></svg>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </main>
+    <footer>
+        <div class="footerContainer">
+            <div class="footerContainer_footerBlock1">
+                <p class="footerContainer_footerBlock1_About-us">About us</p>
+                <p class="footerContainer_footerBlock1_text-1">When using the SKYBOX Services You <br> may transmit, store and or share <br> certain data, information, files, etc. <br> (altogether “Service Data”). For the <br> avoidance of doubt, You retain full <br> ownership of Your Service Data. <br> SKYBOX doea that You or any other uss <br> while using the Service. SKYBOX agrees <br> that these Terms do not grant</p>
+            </div>
+            <div class="footerContainer_footerBlock2">
+                <p class="footerContainer_footerBlock2_Featured-links">Featured links</p>
+                <div class="footerContainer_footerBlock2_footerA">
+                    <a class="footerContainer_footerBlock2_footerA_text-2" href="">Pricing</a>
+                    <a class="footerContainer_footerBlock2_footerA_text-2" href="">Contact</a>
+                    <a class="footerContainer_footerBlock2_footerA_text-2" href="">DMCA</a>
+                    <a class="footerContainer_footerBlock2_footerA_text-2" href="">Refund Policy</a>
+                    <a class="footerContainer_footerBlock2_footerA_text-2" href="">Privacy Policy</a> 
+                    <a class="footerContainer_footerBlock2_footerA_text-2" href="">Terms of Service</a>
+                </div>
+            </div>
+            <div class="footerContainer_footerBlock3">
+                <p class="footerContainer_footerBlock3_Contact-us">Contact us</p>
+                <p class="footerContainer_footerBlock3_text-3">Our office:
+                    <br>
+                    Digitalgoals LTD
+                    <br>
+                    Lapathou, 6, Strovolos 2027,
+                    <br>
+                    Lefkosia, Cyprus
+                    <br>
+                    Phone: +37 06 225 29 36
+                    <br>
+                    Email: mail@example.com</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
