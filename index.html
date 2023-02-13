@@ -18,26 +18,26 @@
     <title>Sky_bootsTrap</title>
 </head>
 <body>
-    <button type="button" class="btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#exampleModal">
-        Launch demo modal
-    </button>
+    <div class="BGALL">
+        <img src="./bg-all.png" alt="">
+        <button type="button" class="btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            Launch demo modal
+        </button>
+    </div>
     <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h1 class="modal-title fs-5" id="exampleModalLabel">File uploading</h1>
-              <button type="button" class="btn btn-secondary">
-                <svg class="upl"><use xlink:href="./sprite.svg#upl"></use></svg>
-                <p>Upload File</p>
-              </button>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content modal-contentWdth">
             <div class="modal-body">
+                <h1 class="modal-title fs-5 SecndBtn-p" id="exampleModalLabel">File uploading</h1>
+                <button type="button" class="SecndBtn">
+                    <svg class="plus SecndBtn-svg"><use xlink:href="./sprite.svg#plus"></use></svg>
+                    <p class="">Upload File</p>
+                </button>
                 <table class="table">
                     <thead>
                       <tr>
                         <th scope="col"><svg class="jpg"><use xlink:href="./sprite.svg#jpg"></use></svg></th>
-                        <th scope="col">Lorem-ipsum_sitamet.jpg</th>
+                        <th class="th-lorem" scope="col">Lorem-ipsum_sitamet.jpg</th>
                         <th scope="col">Complete</th>
                         <th scope="col">12.44 Mb</th>
                       </tr>
@@ -45,30 +45,39 @@
                     <tbody>
                       <tr>
                         <th scope="row"><svg class="jpg"><use xlink:href="./sprite.svg#jpg"></use></svg></th>
-                        <td>Lorem-ipsum_sitamet.jpg</td>
+                        <td class="th-lorem">Lorem-ipsum_sitamet.jpg</td>
                         <td>Uplad Failed</td>
                         <td>12.44 Mb</td>
                       </tr>
                       <tr>
                         <th scope="row"><svg class="jpg"><use xlink:href="./sprite.svg#jpg"></use></svg></th>
-                        <td>Lorem-ipsum_sitamet.jpg</td>
+                        <td class="th-lorem">Lorem-ipsum_sitamet.jpg</td>
                         <td>Complete</td>
                         <td>12.44 Mb</td>
                       </tr>
                       <tr>
-                        <th scope="row"><input type="checkbox"></th>
-                        <th>I agree to the Terms of Use</th>
+                        <th scope="row"><input class="th-checkbox" type="checkbox"></th>
+                        <th class="th-checkbox-p">I agree to the Terms of Use</th>
                       </tr>
                       <tr>
                         <th>
-                            <button type="button" class="btn btn-danger">
-                                <svg class="upl"><use xlink:href="./sprite.svg#upl"></use></svg>
+                            <button type="button" class="btn btn-danger third-btn">
+                                <svg class="upl third-svg"><use xlink:href="./sprite.svg#upl"></use></svg>
                                 <p>Upload File</p>
                             </button>
                         </th>
                       </tr>
                     </tbody>
                 </table>
+                <form class="formDownload">
+                    <p>DOWNLOAD:</p>
+                    <label><input type="radio">144p</label>
+                    <label><input type="radio">360p</label>
+                    <label><input type="radio">720p</label>
+                    <label><input type="radio">1080p</label>
+                    <label><input type="radio">1440p</label>
+                    <label><input type="radio">2160p</label>
+                </form>
             </div>
             <div class="modal-footer">
               <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
@@ -76,9 +85,6 @@
             </div>
           </div>
         </div>
-      </div>
-    <div class="BGALL">
-        <img src="./bg-all.png" alt="">
     </div>
     <header>
         <div class="logo">
